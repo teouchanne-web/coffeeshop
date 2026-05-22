@@ -250,8 +250,7 @@ section.visible, header.visible {
   height: 3px;
   background-color: #f5c97a;
   border-radius: 3px;
-}
-
+} 
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -272,9 +271,8 @@ section.visible, header.visible {
   .nav-links.open {
     display: flex;
   }
-}
 
-.menu-grid {
+  .menu-grid {
     grid-template-columns: 1fr;
   }
 
@@ -290,9 +288,12 @@ section.visible, header.visible {
     font-size: 36px;
   }
 
-  h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-} 
-.contact-wrapper {
-  grid-template-columns: 1fr;
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
