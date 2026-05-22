@@ -137,7 +137,9 @@ nav {
   padding: 20px 60px;
   background-color: #2c1a0e;
   position: sticky;
-  top: 0;
+  top: 0; 
+  z-index: 100;
+
 }
 
 .logo {
@@ -159,8 +161,8 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #f5c97a;
-} 
+  color: #ffffff;
+}
 
 #contact {
   padding: 80px 60px;
