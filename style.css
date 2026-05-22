@@ -34,7 +34,7 @@ html {
   text-decoration: none;
   font-weight: bold;
   border-radius: 30px; 
-  border: none; 
+ border: 1px solid #e0c9a6; 
   cursor: pointer;
 }
 
