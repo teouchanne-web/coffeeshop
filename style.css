@@ -292,4 +292,7 @@ section.visible, header.visible {
 
   h1, h2, h3 {
   font-family: 'Playfair Display', serif;
+} 
+.contact-wrapper {
+  grid-template-columns: 1fr;
 }
