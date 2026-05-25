@@ -1,81 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
-<head> 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+html {
+  scroll-behavior: smooth;
+}
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tbilisi Brew</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+#hero {
+  height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('coffee.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-  <nav>
-    <div class="logo">☕ Tbilisi Brew</div> 
-     <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-    <ul class="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+.hero-content h1 {
+  font-size: 64px;
+  color: #f5c97a;
+  margin-bottom: 20px;
+}
 
-  <header id="hero">
-    <div class="hero-content">
-      <h1>Welcome to Tbilisi Brew</h1>
-      <p>Warm coffee, cozy vibes — right in the heart of Tbilisi</p>
-      <a href="#menu" class="btn">See Our Menu</a>
-    </div>
-  </header>
+.hero-content p {
+  font-size: 20px;
+  color: #fdf6ec;
+  margin-bottom: 40px;
+}
 
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-grid">
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #f5c97a;
+  color: #2c1a0e;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px; 
+  border: 1px solid #e0c9a6; 
+  cursor: pointer;
+}
 
-      <div class="menu-item">
-        <h3>Espresso</h3>
-        <p>Classic Italian espresso shot</p>
-        <span class="price">3.50₾</span>
-      </div>
+.btn:hover {
+  background-color: #e0b060;
+}
 
-      <div class="menu-item">
-        <h3>Cappuccino</h3>
-        <p>Espresso with silky milk foam</p>
-        <span class="price">5.00₾</span>
-      </div>
+#menu {
+  padding: 80px 60px;
+  background-color: #fdf6ec;
+  text-align: center;
+}
 
-      <div class="menu-item">
-        <h3>Latte</h3>
-        <p>Creamy and smooth every time</p>
-        <span class="price">5.50₾</span>
-      </div>
+#menu h2 {
+  font-size: 42px;
+  color: #2c1a0e;
+  margin-bottom: 50px;
+}
 
-    </div>
-  </section>
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Tbilisi Brew was born out of a love for great coffee and warm hospitality. Located in the heart of Tbilisi, we bring you carefully sourced beans and a cozy atmosphere to enjoy every cup.</p>
-  </section>
+.menu-item {
+  background-color: #fff8f0;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
 
-  <section id="contact">
-    <h2>Find Us</h2>
-    <p>📍 Rustaveli Avenue 10, Tbilisi</p>
-    <p>📞 +995 555555555</p>
-    <p>✉️ hello@tbilisibrew</p>
-    <p>🕐 Mon–Sun: 8:00 – 22:00</p>
-  </section>
+.menu-item h3 {
+  font-size: 22px;
+  color: #2c1a0e;
+  margin-bottom: 10px;
+}
 
-  <footer>
-    <p>© 2026 Tbilisi Brew. All rights reserved.</p>
-  </footer>
+.menu-item p {
+  font-size: 15px;
+  color: #7a5c3e;
+  margin-bottom: 20px;
+}
 
- <script src="script.js"></script>
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #c47f2a;
+}
 
-</body>
-</html>
+#about {
+  padding: 80px 60px;
+  background-color: #3d2008;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 42px;
+  color: #f5c97a;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #fdf6ec;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: #2c1a0e;
+  color: #fdf6ec;
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fdf6ec;
+  color: #2c1a0e;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #2c1a0e;
+  position: sticky;
+  top: 0; 
+  z-index: 100;
+
+}
+
+.logo {
+  color: #f5c97a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #f5c97a;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+#contact {
+  padding: 80px 60px;
+  background-color: #fdf6ec;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 42px;
+  color: #2c1a0e;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  font-size: 18px;
+  color: #7a5c3e;
+  margin-bottom: 12px;
+} 
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-info p {
+  font-size: 18px;
+  color: #7a5c3e;
+  margin-bottom: 12px;
+}
+
+.contact-map {
+  grid-column: 1 / -1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border: 2px solid #e0c9a6;
+  border-radius: 8px;
+  background-color: #fff8f0;
+  font-size: 16px;
+  color: #2c1a0e;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #c47f2a;
+} 
+
+section, header {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+section.visible, header.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #f5c97a;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #2c1a0e;
+    padding: 20px;
+    gap: 20px; 
+   .about-wrapper {
+    flex-direction: column;
+  }
+}
+   
+
+  .nav-links.open {
+    display: flex;
+  }
+
+ 
+
+  #menu {
+    padding: 60px 20px;
+  }
+
+  #about, #contact {
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+} 
+
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  object-fit: cover;
+}
