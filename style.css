@@ -56,9 +56,9 @@ html {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  max-width: 300px;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -273,9 +273,7 @@ section.visible, header.visible {
     display: flex;
   }
 
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
+ 
 
   #menu {
     padding: 60px 20px;
